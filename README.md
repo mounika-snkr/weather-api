@@ -1,6 +1,8 @@
 # 🌤️ Weather Forecast API
 
-A RESTful Web API built with ASP.NET Core (.NET 8) that fetches and stores weather forecast data using [Open-Meteo](https://open-meteo.com) based on latitude and longitude inputs. It supports basic CRUD operations for locations/forecast and retrieves real-time forecasts.
+A RESTful Web API built with ASP.NET Core (.NET 8) that fetches and stores weather forecast data using [Open-Meteo](https://open-meteo.com) based on latitude and longitude inputs. 
+
+This project follows **Microservices Architecture** principles and is structured using **Clean Architecture** for separation of concerns and testability.
 
 ---
 
