@@ -13,14 +13,9 @@ public partial class Forecast
 
     public int LocationId { get; set; }
 
-    [Column(TypeName = "datetime")]
-    public DateTime ForecastTime { get; set; }
-
     public double? Temperature { get; set; }
 
     public double? WindSpeed { get; set; }
-
-    public double? Humidity { get; set; }
 
     public int? WeatherCode { get; set; }
 

@@ -9,7 +9,7 @@ namespace WeatherApp.Application
         public MappingProfile()
         {
             CreateMap<Location, LocationDto>().ReverseMap();
-            CreateMap<CreateLocationDto, Location>();
+            CreateMap<CreateLocationDto, Location>().ReverseMap();
             CreateMap<Forecast, ForecastDto>().ReverseMap();
             CreateMap<CurrentWeatherDto, ForecastDto>();
         }

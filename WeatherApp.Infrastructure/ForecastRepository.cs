@@ -20,7 +20,7 @@ namespace WeatherApp.Infrastructure
 
         public async Task<Forecast?> GetLatestForecastByLocationIdAsync(int locationId)
         {
-            return await _dbContext.Forecasts.Where(f => f.LocationId == locationId).OrderByDescending(f => f.ForecastTime).FirstOrDefaultAsync();
+            return await _dbContext.Forecasts.Where(f => f.LocationId == locationId).OrderByDescending(f => f.FetchedAt).FirstOrDefaultAsync();
         }
 
         public async Task AddForecastDataAsync(Forecast forecast)

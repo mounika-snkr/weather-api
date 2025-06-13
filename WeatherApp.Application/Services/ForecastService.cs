@@ -25,9 +25,7 @@ namespace WeatherApp.Application.Services
         public async Task<int> AddForecastDataAsync(ForecastDto forecastDto)
         {
             Forecast forecast = _mapper.Map<Forecast>(forecastDto);
-            forecast.Humidity = 0.0;
             forecast.FetchedAt = DateTime.Now;
-            forecast.ForecastTime = DateTime.Now;
 
             await _forecastRepository.AddForecastDataAsync(forecast);
             return forecast.Id;
